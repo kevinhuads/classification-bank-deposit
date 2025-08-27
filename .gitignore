@@ -1,0 +1,13 @@
+.env
+
+# data and artifacts
+Data/
+Results/
+old_scripts/
+
+# notebooks/runtime
+.ipynb_checkpoints/
+*.ipynb_convert.*
+# python cache
+__pycache__/
+*.pyc
