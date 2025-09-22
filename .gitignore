@@ -4,6 +4,7 @@
 Data/
 Results/
 old_scripts/
+others/
 
 # notebooks/runtime
 .ipynb_checkpoints/
