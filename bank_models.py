@@ -598,7 +598,7 @@ class SkTabNet(ClassifierMixin, BaseEstimator):
         return np.asarray(proba)
 
 
-def run_tabnet(X, y, X_num, X_cat, preprocessor, n_candidates=N_CANDIDATES, factor=FACTOR, n_jobs=N_JOBS):
+def run_tabnet(X, y, preprocessor, n_candidates=N_CANDIDATES, factor=FACTOR, n_jobs=N_JOBS):
     device_name = "cuda" if torch.cuda.is_available() else "cpu"
 
     pipe = _pipe(preprocessor, "tab", SkTabNet(device_name=device_name, seed=SEED, verbose=0))
